@@ -1,41 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #fdf6f0;
-    color: #333;
+    font-family: 'Georgia', serif;
+    color: #4b3832;
+    background-color: #f8f5f2;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    background: #b48b6a;
-    color: #fff;
-    padding: 1rem;
+    text-align: center;
+    padding: 2rem;
+    background: #d8c3a5;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #5c4033;
+}
+
+.hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.story {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
     text-align: center;
 }
 
-nav a {
+.navigation {
+    background: #eae7dc;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.nav-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-card {
+    background: #d8c3a5;
     color: #fff;
-    margin: 0 10px;
+    padding: 1rem 2rem;
     text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+    font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-card:hover {
+    background: #c4a484;
 }
 
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin: 3rem 1rem;
+    color: #5c4033;
+}
+
+.quote .author {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
 }
 
 footer {
-    background: #b48b6a;
-    color: #fff;
     text-align: center;
+    background: #d8c3a5;
+    color: #fff;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 2rem;
 }
