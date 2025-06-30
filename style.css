@@ -1,41 +1,64 @@
-body {
-    font-family: 'Georgia', serif;
-    color: #4b3832;
-    background-color: #f8f5f2;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Celé tělo stránky */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f5ed; /* jemná smetanová */
+    color: #4b3832;
     line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 2rem;
-    background: #d8c3a5;
+/* Navbar */
+.navbar {
+    background-color: #d8c3a5;
+    width: 100%;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-    letter-spacing: 2px;
+.navbar .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-header .subtitle {
-    font-size: 1.2rem;
-    color: #5c4033;
+.navbar .logo {
+    font-size: 2rem;
+    color: #fff;
 }
 
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #f0e2d0;
+}
+
+/* Hero sekce */
 .hero {
-    text-align: center;
-    margin: 2rem 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-image {
-    width: 80%;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid #d8c3a5;
 }
 
+/* Story */
 .story {
     max-width: 800px;
     margin: 2rem auto;
@@ -43,51 +66,44 @@ header .subtitle {
     text-align: center;
 }
 
-.navigation {
-    background: #eae7dc;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.nav-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.nav-card {
-    background: #d8c3a5;
-    color: #fff;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s;
-    font-weight: bold;
-}
-
-.nav-card:hover {
-    background: #c4a484;
-}
-
+/* Quote */
 .quote {
+    background-color: #eae7dc;
     text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.quote blockquote {
     font-style: italic;
-    margin: 3rem 1rem;
+    font-size: 1.3rem;
     color: #5c4033;
 }
 
 .quote .author {
     display: block;
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: #5c4033;
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    background: #d8c3a5;
+    background-color: #d8c3a5;
     color: #fff;
+    text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Responsivita */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar nav a {
+        margin: 0.5rem 0;
+        display: block;
+    }
 }
