@@ -24,6 +24,7 @@ body {
 .navbar .container {
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -37,7 +38,7 @@ body {
     color: #000;
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     transition: color 0.3s;
 }
